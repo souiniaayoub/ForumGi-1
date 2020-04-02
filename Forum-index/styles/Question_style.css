@@ -1,0 +1,21 @@
+.ques{
+    background-color: whitesmoke;
+    width: 100%;
+}
+
+.quest{
+    background-color: whitesmoke;
+    width: 100%;
+    padding-left: 2%;
+}
+.course_priced{
+    background-color: #ffb606;
+    height: 50px;
+    /*width: 100%;
+    padding-left: 2%;*/
+}
+
+hr.solid {
+  border-top: 1px solid #bbb;
+  justify-content: center;
+}
