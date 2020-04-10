@@ -1,0 +1,128 @@
+body {
+  background-image: url("../images/christine-donaldson-9oqCC2XpYX0-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.forms-container {
+  background-color: white;
+  height: 60%;
+  /* width: 50%; */
+  width: 70vw;
+  border-radius: 4px;
+  position: relative;
+}
+
+@media (max-width: 656px) {
+  .forms-container {
+    width: 100vw;
+  }
+
+  form {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+form {
+  height: 110%;
+  width: 60%;
+  position: absolute;
+  top: -5%;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  border-radius: 6px;
+  z-index: 100;
+  flex-direction: column;
+}
+
+.logo-details {
+  height: 100%;
+  width: 40%;
+  position: absolute;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  z-index: 10;
+  background-color: white;
+}
+
+.logo-details h3 span {
+  color: #ffb606;
+}
+
+@media (max-width: 390px) {
+  .logo-details {
+    height: 120px;
+    width: 100%;
+    top: calc(-118px - 5%);
+  }
+
+  form {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .forms-container {
+    margin-top: 120px;
+  }
+}
+
+.login {
+  left: -5%;
+  background-color: #ffb606;
+  display: flex;
+}
+
+.signup {
+  right: -5%;
+  /* background-color: gray; */
+  background-color: #ffb606;
+}
+
+form button {
+  height: 40px;
+  width: 100px;
+  color: #ffb606;
+  background-color: white;
+  border: none;
+  text-transform: uppercase;
+}
+
+form div {
+  width: 300px;
+  max-width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+form button:hover {
+  background-color: #ffb606;
+  color: white;
+  border: 1.5px solid white;
+}
+
+form input:not([type="radio"]) {
+  height: 40px;
+  width: 300px;
+  max-width: 90%;
+  padding-left: 20px;
+  background-color: white;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.custom-control-inline {
+  margin-bottom: 10px;
+}
